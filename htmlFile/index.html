@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+
+
+<head>
+    <title>Writing & Worldbuilding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../cssFile/indexStylesheet.css" rel="stylesheet" type="text/css">
+    <style>
+      /* Styles can go here */
+    </style>
+</head>
+
+
+<body onload="siteLoaded()">
+  <!-- Header, including id to allow a back to the top link -->
+    <header id = "theHeading" class="page-header">
+    <section style="margin: 2%";>
+      <h1>Writing & Worldbuilding</h1>
+      <!-- Nav linking to the various sections of the site -->
+      <nav>
+        <a href="#writing">Writing</a>
+        <a href="#worldbuilding">Worldbuilding</a>
+        <a href="succession.html">Writing Example 1</a>
+        <a href="ro3kingdoms.html">Writing Example 2</a>
+        <a href="userSaved.html">My Personal Folder</a>
+        </nav>
+    </section>
+    </header>
+
+    <!-- Main body of the site -->
+    <main>
+        <h2>Introduction</h2>
+        <p>A major hobby of mine is writing and worldbuilding - specifically fantasy. There are many ways of writing a story and indeed in building a world. 
+            The main things that shape a story are these three main 'drivers': plot, character and theme. We're going to take a look at these below.<br>
+            Worldbuilding is a lesser hobby of mine and is an important component to writing fantasy. We will cover some of this as well. 
+            Some of the most important aspects of worldbuilding is geography, culture, history and race, which all group into a overarching concept called 'lore'. 
+            A key part of worldbuilding is creating maps!
+        </p>
+        <h2 id = "writing" >Writing</h2>
+            <p>
+                Writing is an all-consuming and almost selfish task that requires absent as much as active thought. As mentioned, the three main components of writing fantasy
+                are plot, character and theme. You will not be able to focus on all three. Realistically, your work will hit two of the three, with a primary focus on just one. 
+            </p>
+
+            <!-- every item that can be saved as nested within the 'article' tags -->
+            <article id="plotArticle">
+                <h3>Plot</h3>
+                    <p>Plot-driven stories tend to be the most enjoyable and exciting for readers and viewers. Plot is how a story develops and tends to 'push' the story to it's climaxes, low points and conclusion.
+                        Characters can affect the plot as much as a plot affects characters, so there is not necessarily a clearly defined 'plot-driven' story. 
+                        In fact, plot and characters can swap throughout a story as the major driving-force - a good writer can artfully swap between these.
+                        An example of a plot-driven story is the trilogy of 'the Lord of the Rings'. 
+                    </p>
+                    <aside>
+                        <figure>
+                        <img src = "../imagesFile/storyCircle.png"
+                        alt="Story Circle" data-image="grab">
+                            <figcaption>Most stories are structured the same way, following certain beats at certain times. Dan Harmon simplified this right down to a 'story wheel'.</figcaption>
+                        </figure>
+                    </aside>
+                    <br>
+            </article>
+
+            <article id="characterArticle">
+                <h3>Character</h3>
+                    <p>Character-driven stories revolve around the motives and actions of characters. 
+                        Some of these stories can be absent of any particular plot, per se, but most will have a general story that is being adhered to.
+                        Character-based stories have the ability to deviate from an audience's expectations. If the hero is expected to defeat the villain, a character-based
+                        story can justify the actions of three-dimensional characters to go against these 'troupes' without confusing or disappointing an audience.
+                        Two examples of character-driven stories are the 'Game of Thrones' book series and the film series <a href = "succession.html">'Succession'</a>.
+                    </p>
+            </article>
+
+            <article id="themeArticle">
+                <h3>Theme</h3>
+                    <p>Theme tends to be an underlying concept in any story, rather than a driving-force to a story. A writer, however, may choose to make their theme as the primary focus 
+                        to make a point. Usually this is for political or philosophical reasons. One story that is heavily theme-driven is the historical novel, 'The Romance of the Three Kingdoms',
+                        which is a fantasy re-imagining of real-life events that unfolding during the fall of the Han Dynasty in ancient China.
+                    </p>
+                    <p>You can see more info on this theme by clicking 
+                        <a href = "ro3kingdoms.html">this link</a>, which expands more on the novel 'Romance of the Three Kingdoms'.
+                    </p>
+                    <p>The themes covered in works is always debatable, but I'd say that the themes covered for the titles above are:</p>
+                    <br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Book or Series</th>
+                                <th>Theme</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>The Lord of the Rings</td>
+                                <td>Good versus evil</td>
+                            </tr>
+                            <tr>
+                                <td>Game of Thrones</td>
+                                <td>Ambition</td>
+                            </tr>
+                            <tr>
+                                <td>Succession</td>
+                                <td>Power</td>
+                            </tr>
+                            <tr>
+                                <td>Romance of the Three Kingdoms</td>
+                                <td>Cyclical nature of states/nations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </article>
+
+                <!-- Put the radio button form here -->
+                <h4>Which stories interest you the most?</h4>
+                <form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="storyType" value="plot" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Plot
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="storyType" value="character" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Character
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="storyType" value="theme" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                        Theme
+                        </label>
+                    </div>
+                    <label for="userComment">Why do they interest you?</label>
+                    <input type="text" name="userComment" id="userComment" required>
+                    <button onclick="commentForm()">Submit your comment</button>
+                </form>
+                <br>
+
+        <h2 id = "worldbuilding">Worldbuilding</h2>
+
+            <article id="loreArticle">
+                <h3>Lore</h3>
+                    <p>Lore is a body of knowledge and tradition that makes up a fantasy world. It comprises of history, culture, race, social norms and so much more. 
+                        Whilst it's an abstract concept, think about 'Harry Potter' and you will imagine the castle, the school robes and spells and instantly know it!
+                        Creating your own lore will take a lot of time. It will happen gradually as you add more things into the world, and indeed you will change and amend things as you create it!
+                        Creating lore also has the strange ability of creating itself, whereby after a certain time, your mind intuitively knows or creates new things to add to it.
+                        It is important not to spend too much time working on lore, but to focus on what you need for your story. The rest will develop over time.</p>
+                    <aside>
+                        <p style="color: white;">
+                            Here are some questions to ask yourself when creating your own lore:<br>         
+                            <ul>
+                            <li>What historic events have shaped your world's present? Are there any attitudes and beliefs held by characters because of these events?</li>
+                            <li>What culture or cultures are present in your world? What real-world influences are present?</li>
+                            <li>What races or ethnicities exist in your world? Are there tensions? Is there a bloody history between groups?</li>
+                            <li>Power structures: is there a government, a kingdom, a tribe? How is day-to-day life?</li>
+                            <li>What fantasy elements do you want to include? Is there magic? How does magic affect the world, history and day-to-day life?</li>
+                        </ul>
+                        </p>
+                    </aside>
+                    <br>
+            </article>
+
+            <article id="mapsArticle">
+                <h3>Maps</h3>
+                    <p>
+                        An important aspect to some stories is a map of the area where a fantasy story is unfolding. It is primarily a tool for the writer, but many readers enjoy the visual tool to help immersion into a story.
+                        It is often advised when creating a map of the world to base it on real-life. This is becasue the geography will be closer to the accuracies of real-life and indeed something relatable for readers.
+                        An old troupe of all fantasy maps is the 'sea to the west, uncivilised peoples to the east, jungles and desert to the south and tundra to the north'. 
+                        This model is typical from a European's historic point of view and ingrained in millions of minds. 
+                        It is best not to adhere to these entirely, but being aware of this and what people visually understand can help in the creation of your own maps.
+                        There are many useful sites that allow you to build your own world.        
+                    </p>
+                    <p>
+                        The website 
+                        <a target = "_blank" href = "https://inkarnate.com/">Inkarnate!</a> is a great site for building fantasy maps!
+                    </p>
+            </article>
+
+            <article id="icebergArticle">
+            <h3>The Iceberg Theory</h3>
+                <img src = "../imagesFile/iceberg.jpeg"
+                alt="Iceberg"
+                data-image="grab"
+                style="max-width: 264px;">
+                <p>Many fantasy fans and writers will talk about the 'iceberg' theory of the lore of a book or film series. The idea is that what is shown and told in the story is only
+                    the surface of larger content hidden beneath the surface. An excellent example of this is the lore of Middle Earth, created by JRR Tolkien. Readers and viewers of the 
+                    books and films enjoy the story withoutu being shown the full extent of history, language or culture. As a writer, however, the real practically of creating a rich world
+                    AND writing a story is not practical. George R R Martin referred to his own lore iceberg as a raft of ice floating on the sea. This is due to the impracticality of 
+                    creating history, culture and other things that don't impact the story you're writing.
+                    Indeed, one of the most accomplished and 'fastest' writers, Brandon Sanderson, speaks about the 'hollow iceberg', stating that as a writer. your goal is to give the appearence that your lore 
+                    goes really deep, but you merely leave gaps to fill at later stages. You might reference a war that happened a hundred years ago without actually thinking up why or how
+                    it happened. As long as there's no inconsistencies or paradoxes, this is an essential tool!
+                </p>
+            </article>
+    
+            <article id="dungeonsArticle">
+                <h3>Dungeons & Dragons</h3>
+                    <p>A perfect example of <b>pure</b> worldbuilding can be seen in the game of 'Dungeons and Dragons'. The dungeon master (DM or GM) creates a world for their players to occupy and influence, crafting a story together.</p>
+                    <img src = "../imagesFile/dnd.jpeg"
+                    alt="Fighting a dragon"
+                    data-image="grab">
+            </article>
+    </main>
+
+    <footer style="text-align: right;">Images may be subject to copyright</footer>
+    <!-- Link to top of site -->
+    <a href = "#theHeading">Back to top!</a>
+
+    <script src="../jsFile/scripts.js"></script>
+</body>
+
+</html>

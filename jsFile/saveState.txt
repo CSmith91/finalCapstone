@@ -1,0 +1,35 @@
+function siteLoaded(){
+    let h3Sections = document.querySelectorAll('h3');
+    let h3SectionsArray = [];
+
+    for (i = 0 ; i < h3Sections.length; i++){
+
+        h3SectionsArray.push(h3Sections[i].innerText);
+
+        h3Sections[i].addEventListener('click', (e) => {
+            clickedSection(e);
+            //console.log(`${e.target.innerText} was clicked!`);
+        })
+    }
+    //console.log(h3SectionsArray);
+
+// THESE ARE THE IMAGES 
+    // let images = document.querySelectorAll('img');
+    // let imagesArray = [];
+    // console.log(images);
+
+    // for (i = 0 ; i < images.length; i++){
+
+    //     imagesArray.push(images[i]);
+
+    //     images[i].addEventListener('click', () => {
+    //         console.log(`${images[i]} was clicked!`);
+    //     })
+    // }
+    // console.log(imagesArray);
+
+}
+
+function clickedSection(e){
+    console.log(`${e.target.innerText} was clicked!`);
+}
