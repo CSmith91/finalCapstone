@@ -2,9 +2,12 @@
 Part of the Build Your Brand tasks with HyperionDev. This repository looks at the website that I have built from scratch. This website contains articles and images which the user can 'save' to view later. Session storage is used, so users can refresh or others browse across the site without losing their favourites. The project is divided into sub-folders, each devoted to the css files, javascript files, html files and images.
 
 ## Contents
-### Installation
-### Usage
-### Credits
+<ol>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#credits">Credits</a></li>
+</ol>
+
 
 ## Installation
 Download the capstoneWesbite folder to your local machine. To access the site, navigate to capstoneWebite/htmlFile and open the index.html file, running on your browser. The site will load and you will be able to navigate the site from there.
